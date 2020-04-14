@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+		<title>SpaceX Passenger Dashboard</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Asap+Condensed" rel="stylesheet" />
+		<link type="text/css" href="styles/main.css" rel="stylesheet" />
+		<link type="text/css" href="styles/layout.css" rel="stylesheet" />	
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    </head>
+
+    <body>
+        <header class="grid-item header">
+            <img class="logo" src="img/spacex.png" alt="het logo van spacex" />
+            <img class="logo" src="img/spacex2.png" alt="het logo van spacex" />
+            <div class="menutoggle">
+                <a href="#">&#9776;</a>
+            </div>
+      </header>
+      <nav id="menu" class="inactive">
+          <ul>
+              <li><a href="#">Dashboard Home</a></li>
+              <li><a href="landing.html">Landing page</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Elon_Musk">Everything about Elon</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Mars">Where are we going?</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/SpaceX">SpaceX</a></li>		
+          </ul>
+      </nav>
+      <main class="grid-item main">
+          <article>
+              <h2>Speed and proximity overview</h2>
+              <div id="curve_chart"></div>
+          </article>
+          <article>
+              <h2>Passenger overview</h2>
+              <div id="piechart"></div>
+          </article>
+          </main>
+      <aside class="grid-item ad1">
+          <h1>Our savior,</h1>
+          <h2>For whom we do everything</h2>
+          <p>
+              For when you need that extra motivation in space.
+          </p>
+          <img src="img/elon.jpg" alt="Modern messiah pictured" />
+      </aside>
+      <aside class="grid-item ad2">
+              <h2>Fuel</h2>
+              <div id="chart_div" style="width: 140px; height: 120px;"></div>
+      </aside>
+      <footer class="grid-item foot"><h2>Everything on this website is a fanservice for Elon Musk and Wikipedia.</h2></footer>
+
+  <!-- om een of andere reden werkt het niet als deze in de head staat, ok fine. -->
+  <script type="text/javascript" src="scripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+html {
+	box-sizing: border-box;
+}
+
+*, 
+*:before,
+*:after{
+	box-sizing: inherit;
+}
+
+body{
+	background-color: #ffffff;
+	color: rgb(51, 51, 51);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1, h2 {
+  font-size: 1.3em;
+  font-weight: normal;
+  padding: 0.4em;
+  border-radius: 0.2em;
+  margin-top: 20px;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside ul li a {
+  text-decoration: none;
+}
+
+.header, .main, .ad1, .ad2, .foot{
+  padding: 0.2em 1em;
+}
+
+header img {
+  display: flex;
+  justify-content: center;
+  max-width: 50%;
+}
+
+.header, .main, .ad1, .ad2, .foot {
+    background-color: #ffffff;
+}
+
+#menu {
+    background-color: #271eaa;
+}
+
+img {
+  width: 100%;
+  margin: 0;
+}
+
+aside p a {
+  display: block;
+}
+
+.logo {
+  max-height: 100px;
+  width: auto;
+}
+
+footer h2 {
+  text-align: center;
+}
+
+@media all and (min-width: 991px) {
+  body {
+    background-color: #cccccc;
+  }
+  #keurmerk {
+    max-width: 50%;
+  }
+}
+
+@media all and (min-width: 641px) and (max-width: 990px) {
+  body {
+    background-color: #cccccc;
+  }
+
+  #keurmerk {
+    max-width: 70%;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 640px) {
+  #keurmerk {
+    max-width: 90%;
+  }
+}
