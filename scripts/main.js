@@ -1,13 +1,13 @@
-document.getElementsByClassName('menutoggle')[0].onclick = function() {
-    var menu = document.getElementById('menu');
-    if(menu.className == "active"){
-        menu.className = "inactive";
-    } else {
-        menu.className = "active";
+document.addEventListener("DOMContentLoaded", function(){
+    document.getElementsByClassName('menutoggle')[0].onclick = function() {
+        var menu = document.getElementById('menu');
+        if(menu.className == "active"){
+            menu.className = "inactive";
+        } else {
+            menu.className = "active";
+        }
     }
-}
 
-window.onload = function() {
     // Menu Toggle
     var menuToggle = document.getElementsByClassName('menutoggle')[0];
 
@@ -37,7 +37,7 @@ window.onload = function() {
         if(resizeTo) clearTimeout(resizeTo);
         resizeTo = setTimeout(drawChart, 500);
     };
-};
+});
 
 function drawChart() {
     var speedPromixityChartData = google.visualization.arrayToDataTable([

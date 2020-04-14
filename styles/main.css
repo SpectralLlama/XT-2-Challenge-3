@@ -66,6 +66,8 @@ footer h2 {
   text-align: center;
 }
 
+/* media quierie dingen */
+
 @media all and (min-width: 991px) {
   body {
     background-color: #cccccc;
@@ -90,3 +92,31 @@ footer h2 {
     max-width: 90%;
   }
 }
+
+#landing-map {
+  width: 500px;
+  height: 500px;
+}
+
+#landing-map .mapboxgl-market > svg > g > g:nth-child(2) {
+  fill: rgb(63, 206, 75);
+}
+
+#landing-map .mapboxgl-marker.disallowed > svg > g > g:nth-child(2) {
+  fill: #bb3939;
+}
+
+table tr td {
+  width: 50%;
+}
+
+.elevation .wspeed .raining {
+  background-color: #37a03c;
+  color: white;
+}
+
+.no {
+  background-color: #d84747;
+  color: white;
+}
+
